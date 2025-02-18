@@ -1,0 +1,54 @@
+body{
+    background-color:rgb(235, 243, 5);
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container{
+    height:70vh;
+    width:40%;
+    position:absolute;
+    transform: translate(-50%,-50%); /*bu ve sonraki ikisi ile her şey biraz ortaya dogru geldi container içindeki,padding ile sonradan ortaya gelecek*/
+    top:50%;
+    left:50%;
+    text-align:center;
+    border-radius:5%;
+    background-color: #03f313;
+    border:1px solid transparent;
+    padding: 0 200px 80px 200px ;
+
+    h1{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align:center;
+        font-size:50px;        
+    }
+
+    #result{  /*id olduğu için # verdik*/
+        text-align:center;
+        font-size:80px;
+        -webkit-text-stroke: 5px; /* kalınlaşması için sayının*/
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .con2{
+        display:flex;  /*+ - ve reset yanyana geldi*/
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;
+
+        .inner{
+            padding:40px; /*butonlar birbirinden ayrıldı*/
+       
+            button{      
+                font-size:100px;
+                border:none; /* border-radius 0 a indi*/
+                background-color: transparent; /*arka planda ne renk varsa o görünür background'ta*/
+                transform: translate(0%,-50%); /*bu ve sonraki ikisi ile her şey biraz ortaya dogru geldi container içindeki,padding ile sonradan ortaya gelecek*/
+                top:50%;
+                left:50%;
+            }
+        }
+
+    }
+}
+
